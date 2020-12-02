@@ -31,6 +31,9 @@ public class ExceptionHandling {
 		 * all statements in finally will execute all the time irrespective of 
 		 * whether exception has occurred or not
 		 * 
+		 * best to use Throwable class to catch exceptions and error
+		 * because Throwable is the superclass of both error and exceptions
+		 * 
 		 */
 		
 		System.out.println("Begin");
@@ -39,7 +42,7 @@ public class ExceptionHandling {
 		//If exception occurs in try block, statements after exception statement is not executed.
 		//Control goes to catch block directly
 		System.out.println("Will not print if there is exception");
-		}catch(Exception t) {
+		}catch(Throwable t) {
 			System.out.println(t.toString());
 			t.printStackTrace();
 		}
