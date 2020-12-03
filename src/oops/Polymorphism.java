@@ -27,7 +27,17 @@ public class Polymorphism {
 	 *   covariant => return types are className and there is parent - child relationship between those classes
 	 *             => then return type can be changed between the parent and child class
 	 *             => primitives can be changed if used as wrapper classses
-	 *             
+	 *   - while overriding, you can change access modifier provided they dont reduce visibility in child class
+	 *   For e.g. parent private method can have public, protected or default in child
+	 *   But parent public cant have private, protected or default in child
+	 *   
+	 *   Static methods cant be overriden (Method hiding)
+	 *   Parent p = new Child()
+	 *   p.method() ->  normally will refer to child method
+	 *   but if static, then it will call parent method
+	 *   
+	 *   @Override annotation
+	 *   
 	 *     Polymorphic reference
 	 *     WebDriver driver = new ChromeDriver();
 	 */
