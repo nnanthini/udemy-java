@@ -29,7 +29,7 @@ public class Abstraction {
 	 * cos final classes and interfaces methods cant be overriden
 	 * 
 	 * interface extends anotherInteface (since both are by default abstract)
-	 * multiple inheritance is possible for interface cos all methods are abstract
+	 * multiple inheritance is possible for interface cos all methods are abstract 
 	 * 
 	 * 
 	 */
