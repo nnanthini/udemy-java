@@ -22,6 +22,7 @@ public class FileWrite {
 	 */
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
+		//file.createFile();
 		File file = new File("C:\\Users\\ezhil\\Desktop\\FrontEndNanodegree\\Udemy - Selenium\\FileOperations\\writeFile.txt");
 		FileWriter fw1 = new FileWriter(file); //creates new file everytime doesnt append
 		FileWriter fw = new FileWriter(file, true);
